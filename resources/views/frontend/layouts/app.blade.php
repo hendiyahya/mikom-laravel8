@@ -23,6 +23,7 @@
     @stack('before-styles')
 
     <link rel="stylesheet" href="{{ mix('css/frontend.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 
     @stack('after-styles')
 

@@ -1,5 +1,5 @@
 <header class="header-global align-items-center ">
-    <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg headroom py-lg-2 px-lg-6 navbar-light bg-white">
+    <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg headroom py-lg-2 px-lg-6 navbar-light bg-white shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="/">
                 <img class="navbar-brand-dark common" src="{{asset('img/backend-logo.png')}}" height="35" alt="Logo light">
@@ -35,7 +35,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-black">
+                        <a href="{{ route('frontend.categories.index') }}" class="nav-link text-black">
                             <!-- <span class="fas fa-file-alt mr-1"></span>  -->
                             <h5>Konsultasi</h5>
                         </a>
