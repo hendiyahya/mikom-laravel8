@@ -4,27 +4,69 @@
 
 @section('content')
 
-<section class="section-header bg-primary text-white pb-7 pb-lg-11">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-8 text-center">
-                <h1 class="display-2 mb-4">
-                    The Super Articles
-                </h1>
-                <p class="lead">
-                    We publish articles on a number of topics. We encourage you to read our posts and let us know your feedback. It would be really help us to move forward.
-                </p>
 
-                @include('frontend.includes.messages')
-            </div>
+
+<div class="row">
+{{-- column 1 --}}
+<div class="wrapper column pl-5 pt-5 mt-5 col-2 " style="position: sticky">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3>Pilihan Topik</h3>
         </div>
-    </div>
-    <div class="pattern bottom"></div>
-</section>
 
+        <ul class="list-unstyled components list-group">
+           
+            <li class="list-group-item list-group-item-action border border-dark rounded mb-1">
+                <a href="#" class="text-dark">Pemograman</a>
+                {{-- <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                 <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="#">Home 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 3</a>
+                    </li>
+                </ul> --}}
+            </li>
+            <li class="list-group-item list-group-item-action border border-dark rounded mb-1">
+                <a href="#" class="text-dark">Pemograman</a>
+            </li>
+            <li class="list-group-item list-group-item-action border border-dark rounded mb-1">
+                <a href="#" class="text-dark">Pemograman</a>
+                {{-- <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#">Page 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 3</a>
+                    </li>
+                </ul> --}}
+            </li>
+            <li class="list-group-item list-group-item-action border border-dark rounded mb-1">
+                <a href="#" class="text-dark">Pemograman</a>
+            </li>
+            <li class="list-group-item list-group-item-action border border-dark rounded mb-1">
+                <a href="#" class="text-dark">Pemograman</a>
+            </li>
+        </ul>
+    </nav>
+
+</div>
+{{-- column 1 --}}
+
+{{-- column 2 --}}
 @if(count($$module_name))
+<div class="column col-7">
 <section class="section section-lg line-bottom-light">
-    <div class="container mt-n7 mt-lg-n12 z-2">
+    <div class="container">
         <div class="row">
             @php
             $$module_name_singular = $$module_name->shift();
@@ -86,6 +128,88 @@
         </div>
     </div>
 </section>
+</div>
 @endif
+{{-- column 2 --}}
+
+{{-- column 3 --}}
+<div class="wrapper column pl-3 pt-5 mt-5">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3>Artikel Trending</h3>
+        </div>
+
+        <div class="container-fluid border border-dark">
+            <div class="row">
+                <div class="">
+                    <div class="card">
+                        <div style="display: flex;
+                        flex: 1 1 auto;">
+                            <div class="img-square-wrapper">
+                                <img class="" src="http://via.placeholder.com/300x180" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{-- <ul class="list-unstyled components">
+           
+            <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="#">Home 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#">Page 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Portfolio</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul> --}}
+    </nav>
+
+</div>
+{{-- column 3 --}}
+</div>
+
+
+
+
+
+
+
 
 @endsection

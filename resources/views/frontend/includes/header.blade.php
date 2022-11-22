@@ -1,4 +1,4 @@
-<header class="header-global align-items-center">
+<header class="header-global align-items-center ">
     <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg headroom py-lg-2 px-lg-6 navbar-light bg-white">
         <div class="container">
             <a class="navbar-brand" href="/">
