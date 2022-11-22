@@ -56,6 +56,16 @@
                         <div class="col-auto px-0" data-dropdown-content>
                             <div class="list-group list-group-flush">
                                 @auth
+                                <a href="{{ route('backend.posts.index')}}"
+                                    class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
+                                    <span class="icon icon-sm icon-success"><i class="fas fa-pen"></i></span>
+                                    <div class="ml-4">
+                                        <span class="text-dark d-block">
+                                            Kelola Post
+                                        </span>
+                                        <span class="small">Fitur Kelola Post</span>
+                                    </div>
+                                </a>
                                 <a href="{{ route('frontend.users.profile', auth()->user()->id) }}"
                                     class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
                                     <span class="icon icon-sm icon-success"><i class="fas fa-user"></i></span>
