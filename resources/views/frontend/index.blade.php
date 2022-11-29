@@ -27,7 +27,7 @@
             </div>
             <div class="col-6 col-sm-4 mb-5">
                 <a href="#" class="page-preview scale-up-hover-2">
-                    <img class="shadow-lg rounded scale" src="https://user-images.githubusercontent.com/396987/88489727-f3889200-cfb7-11ea-819f-dc9a52bc8d82.jpg"
+                    <img class="shadow-lg rounded scale" src="{{asset('img/ss1.png')}}"
                         alt="Landing page preview">
                     <div class="text-center show-on-hover">
                         <h6 class="m-0 text-center text-white">Post<i
@@ -37,8 +37,7 @@
             </div>
             <div class="col-6 col-sm-4 mb-5">
                 <a href="#" class="page-preview scale-up-hover-2">
-                    <img class="shadow-lg rounded scale" src="https://user-images.githubusercontent.com/396987/88519250-a0dcc380-d013-11ea-9dc5-9d731af611f1.jpg"
-                        alt="About page preview">
+                    <img class="shadow-lg rounded scale" src="{{asset('img/ss2.png')}}">
                     <div class="text-center show-on-hover">
                         <h6 class="m-0 text-center text-white">Forum<i
                                 class="fas fa-external-link-alt ml-2"></i></h6>
@@ -47,7 +46,7 @@
             </div>
             <div class="col-6 col-sm-4 mb-5">
                 <a href="#" class="page-preview scale-up-hover-2">
-                    <img class="shadow-lg rounded scale" src="https://user-images.githubusercontent.com/396987/88519360-d1bcf880-d013-11ea-9f6c-b5d33912057f.jpg"
+                    <img class="shadow-lg rounded scale" src="{{asset('img/ss3.png')}}"
                         alt="Pricing page preview">
                     <div class="text-center show-on-hover">
                         <h6 class="m-0 text-center text-white">Konsultasi<i
