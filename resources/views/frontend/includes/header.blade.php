@@ -29,7 +29,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-black">
+                        <a href="{{ route('frontend.privacy') }}"class="nav-link text-black">
                             <!-- <span class="fas fa-file-alt mr-1"></span>  -->
                             <h5>Forum</h5>
                         </a>

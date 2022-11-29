@@ -1,16 +1,12 @@
 @extends('frontend.layouts.app')
 
-@push('after-styles')
-    <link rel="stylesheet" href="{{ asset('css/forum.css') }}">
-@endpush
-
 @section('title') {{app_name()}} @endsection
 
 @section('content')
 
 <section class="section section-ld">
 <div class="container">
-<div class="main-body">
+<div class="main-body p-0">
     <div class="inner-wrapper">
         <!-- Inner sidebar -->
         <div class="inner-sidebar">
@@ -21,7 +17,7 @@
                         <line x1="12" y1="5" x2="12" y2="19"></line>
                         <line x1="5" y1="12" x2="19" y2="12"></line>
                     </svg>
-                    Forum Baru
+                    NEW DISCUSSION
                 </button>
             </div>
             <!-- /Inner sidebar header -->
@@ -36,12 +32,12 @@
                                 <div class="simplebar-content-wrapper" style="height: 100%; overflow: hidden scroll;">
                                     <div class="simplebar-content" style="padding: 16px;">
                                         <nav class="nav nav-pills nav-gap-y-1 flex-column">
-                                            <a href="javascript:void(0)" class="nav-link nav-link-faded has-icon active">Semua Forum</a>
-                                            <a href="javascript:void(0)" class="nav-link nav-link-faded has-icon">Teknologi</a>
-                                            <a href="javascript:void(0)" class="nav-link nav-link-faded has-icon">Kemahasiswaan</a>
-                                            <a href="javascript:void(0)" class="nav-link nav-link-faded has-icon">Penelitian</a>
-                                            <a href="javascript:void(0)" class="nav-link nav-link-faded has-icon">Kompetisi</a>
-                                            <a href="javascript:void(0)" class="nav-link nav-link-faded has-icon">Pengabdian</a>
+                                            <a href="javascript:void(0)" class="nav-link nav-link-faded has-icon active">All Threads</a>
+                                            <a href="javascript:void(0)" class="nav-link nav-link-faded has-icon">Popular this week</a>
+                                            <a href="javascript:void(0)" class="nav-link nav-link-faded has-icon">Popular all time</a>
+                                            <a href="javascript:void(0)" class="nav-link nav-link-faded has-icon">Solved</a>
+                                            <a href="javascript:void(0)" class="nav-link nav-link-faded has-icon">Unsolved</a>
+                                            <a href="javascript:void(0)" class="nav-link nav-link-faded has-icon">No replies yet</a>
                                         </nav>
                                     </div>
                                 </div>

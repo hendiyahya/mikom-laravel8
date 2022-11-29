@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\Frontend\ForumController;
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,11 +26,13 @@ Route::get('language/{language}', 'LanguageController@switch')->name('language.s
 *
 * --------------------------------------------------------------------
 */
+Route::get('forum', [ForumController::class, 'index']);
 Route::group(['namespace' => 'Frontend', 'as' => 'frontend.'], function () {
     Route::get('/', 'FrontendController@index')->name('index');
     Route::get('home', 'FrontendController@index')->name('home');
     Route::get('privacy', 'FrontendController@privacy')->name('privacy');
     Route::get('terms', 'FrontendController@terms')->name('terms');
+    // Route::get('forum', 'ForumController@index')->name('forum');
     
     
 
@@ -139,3 +144,8 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'as' => 'backend.',
     Route::patch("$module_name/{id}/block", ['as' => "$module_name.block", 'uses' => "$controller_name@block", 'middleware' => ['permission:block_users']]);
     Route::patch("$module_name/{id}/unblock", ['as' => "$module_name.unblock", 'uses' => "$controller_name@unblock", 'middleware' => ['permission:block_users']]);
 });
+
+
+// Route::resource('forum', ForumController::class);
+
+
